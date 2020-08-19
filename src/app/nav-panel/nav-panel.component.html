@@ -1,0 +1,26 @@
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" [routerLink]="['/home']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Главная</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" [routerLink]="['/gen-of-words']" routerLinkActive="active">Генерация словоформ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" [routerLink]="['/about']" routerLinkActive="active">Словарь</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>

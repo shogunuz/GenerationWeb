@@ -1,0 +1,77 @@
+
+
+
+
+
+
+
+
+    <div class="container-fluid">
+
+      <div class="container">
+        <br>
+        <br>
+        <hr>
+        <div class="row ">
+          <div class="col-6 ">
+            <br>
+            <div class="row justify-content-center">
+              <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+              <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+              <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+          </div>
+          <div class="col-6">
+            <br>
+            <div class="row">
+              <div class="col">
+                <img src="pic/download.jfif" alt="">
+              </div>
+              <div class="col">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </div>
+            </div>
+            <br>
+            <hr>
+            <div class="row">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sint.
+            </div>
+
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <div class="row justify-content-left">
+          <div class="col-6">
+            <div class="row justify-content-center">
+              <p>Lorem ipsum dolor sit amet</p>
+              <br>
+              <div class="input-group">
+                <input class="form-control w-50" [(ngModel)]="str">
+                <span class="input-group-btn">
+        <button class="btn btn-info" (click)="sumbit()">ОК</button>
+    </span>
+              </div>
+            </div>
+            <br>
+            <hr>
+            <div class="row justify-content-left">
+              <div *ngFor="let item of dict | keyvalue">
+                <i class="font-italic color-red dict">{{item.key}}: </i>   <b>{{item.value}}</b>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
